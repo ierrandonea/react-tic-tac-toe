@@ -1,13 +1,116 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  width: auto;
+  height: auto;
+  background: #5D5854;
+  font-family: sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.Game {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  text-align: center;
+}
+
+.Menu {
+  text-align: center;
+  width: 500px;
+  height: 290px;
+  margin-top: 150px;
+  color: white;
+  background: #5D5854;  
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 20px rgb(121, 151, 160);
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-items: center;
+}
+
+.inputs {
+  width: 100%;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-around;
+}
+
+.inputs input {
+  width: 220px;
+  height: 30px;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  background: #807973;
+  ;
+}
+
+::placeholder {
+  color: rgb(137, 200, 219);
+  text-align: center;
+} 
+
+.inputs div {
+  font-size: 50px;
+  color: rgb(121, 151, 160);
+}
+
+.start {
+  width: 200px;
+  height: 30px;
+  margin-top: 20px;
+}
+
+.GameBoard {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.turns {
+  color: white;
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+
+.Board {
+  width: 600px;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 20px rgb(121, 151, 160);
+}
+
+.row {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 200px;
+}
+
+.Tile {
+  width: 200px;
+  height: 200px;
+  border: 1px solid rgb(121, 151, 160);
+  font-size: 150px;
+  color: #807973;
+  outline: none;
+}
+
+.Tile:active {
+  border: none;
+  border-radius: none;
+}
+
+.reset {
+  margin-top:30px;
+  width: 150px;
+  height: 50px;
+  color: white;
+  font-size: 20px;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  background: #5D5854;
+  box-shadow: 0px 0px 10px 5px rgb(121, 151, 160);
 }
